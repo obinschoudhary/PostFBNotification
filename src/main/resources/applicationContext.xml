@@ -10,7 +10,7 @@
     http://www.springframework.org/schema/data/mongo
     http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd">
 
-<import resource="classpath*:repoapplicationContext.xml" /> 
+<import resource="classpath*:repoapplicationContext.xml" />
 <context:annotation-config/>
 <!--  <mongo:repositories base-package="com.absa.fb.repository" mongo-template-ref="mongoTemplate"/>
   <bean id="subscriptionservice" class="com.barclays.facebook.bot.SubscriptionService">
