@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.data.mongodb.core.MongoTemplate;
 
 import com.absa.fb.job.FBNotifier;
 
@@ -18,7 +19,8 @@ public class Main implements CommandLineRunner {
 	
 
 	public static void main(String[] args) {
-        ApplicationContext ctx = SpringApplication.run(Main.class, args);
+		ApplicationContext ctx = SpringApplication.run(Main.class, args);
+        
     }
 	
 
