@@ -41,7 +41,7 @@
 					<!-- MainClass in mainfest make a executable jar -->
 					<archive>
 					  <manifest>
-						<mainClass>com.mkyong.core.utils.App</mainClass>
+						<mainClass>com.absa.fb.Main</mainClass>
 					  </manifest>
 					</archive>
 
@@ -65,7 +65,7 @@
             <assembleDirectory>target</assembleDirectory>
             <programs>
                 <program>
-                    <mainClass>Main</mainClass>
+                    <mainClass>com.absa.fb.Main</mainClass>
                     <name>worker</name>
                 </program>
              </programs>
