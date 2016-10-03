@@ -39,7 +39,8 @@ public class FBNotifier extends QuartzJobBean {
 		for(Subscription sub:subscribers) {
 			recipient = new IdMessageRecipient(sub.getUserId());
 			System.out.println("Scheduler invoked");
-			Message simpleTextMessage = new Message("second Message");
+			String message=System.getenv("PUBLISH_MESSAGE");
+			Message simpleTextMessage = new Message(message);
 			try {
 				facebookClient.publish(ME_MESSAGES, GraphResponse.class, Parameter.with(RECIPIENT, recipient),
 						Parameter.with(MESSAGE, simpleTextMessage));
